@@ -1,0 +1,67 @@
+{
+  "_from": "protractor-html-reporter-2@^1.0.4",
+  "_id": "protractor-html-reporter-2@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-IlUcRac05bPUWscsWkEYNGNnly35LhNu4rH5/umdrRFiqOkgKdofPjw6sc1cxswTOERErWxQm0tFhl2CBkV1Kw==",
+  "_location": "/protractor-html-reporter-2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "protractor-html-reporter-2@^1.0.4",
+    "name": "protractor-html-reporter-2",
+    "escapedName": "protractor-html-reporter-2",
+    "rawSpec": "^1.0.4",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.4"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/protractor-html-reporter-2/-/protractor-html-reporter-2-1.0.4.tgz",
+  "_shasum": "ccd8123ae294f243b590f633a8d2859a4c623a8c",
+  "_spec": "protractor-html-reporter-2@^1.0.4",
+  "_where": "/Users/tomasz_kocerba/Desktop/projects/cautuswebfrontend",
+  "author": {
+    "name": "Abhishek Yadav",
+    "email": "abhishek.yadav@helloselenium.com"
+  },
+  "bugs": {
+    "url": "https://github.com/abhishekkyd/protractor-html-reporter-2/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "fs-extra": "^1.0.0",
+    "jasmine-reporters": "^2.3.0",
+    "lodash": "^4.17.5",
+    "path": "^0.12.7",
+    "xmldoc": "^0.5.1"
+  },
+  "deprecated": false,
+  "description": "To generate HTML report for Protractor test execution with pie charts",
+  "homepage": "https://github.com/abhishekkyd/protractor-html-reporter-2#readme",
+  "keywords": [
+    "protractor html reporter 2",
+    "protractor html reporter",
+    "protractor html report",
+    "protractor",
+    "html reporter",
+    "jasmine",
+    "protractor-xml2html-reporter",
+    "xml to html",
+    "xml2html"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "protractor-html-reporter-2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekkyd/protractor-html-reporter-2.git"
+  },
+  "scripts": {
+    "test": "protractor example/conf.js"
+  },
+  "version": "1.0.4"
+}
