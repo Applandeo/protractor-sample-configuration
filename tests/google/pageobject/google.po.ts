@@ -14,4 +14,8 @@ export class GooglePage {
         const searchButton = $('.search-button');
         return searchButton.click();
     }
+
+    getPageTitle() {
+        return browser.getTitle();
+    }
 }

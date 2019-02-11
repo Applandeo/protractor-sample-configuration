@@ -34,22 +34,23 @@ exports.config = {
   },
   beforeLaunch: () => {
     // Before you run your tests you have to create empty directory
-    const src = 'tests/reports/screenshots/';
+    const src = './tests/reports/screenshots/';
     fs.emptyDir(src);
   },
   onPrepare: function() {
+      // setting ignoreSynchronization to false  - we are takeing care about the flow 
       browser.ignoreSynchronization = false;
 
       require("ts-node").register({
         project: "e2e/tsconfig.e2e.json"
       });
 
-      const src = 'tests/reports/screenshots/';
+      const src = './tests/reports/screenshots/';
 
       // here we add jasmine-reporter to generate xml file with tests results
       jasmine.getEnv().addReporter(
           new jasmineReporters.JUnitXmlReporter({
-            savePath: 'tests/reports/',
+            savePath: './tests/reports/',
             consolidate: true,
             consolidateAll: true,
             filePrefix: 'results'
@@ -79,13 +80,13 @@ exports.config = {
       browser.getProcessedConfig().then(() => {
         const browserName = c.get("browserName");
         const browserVersion = c.get("browserVersion");
-        const name = new Date().toISOString().replace(':', '_').replace('.', '_').split(':');
+        const name = new Date().toISOString().replace(':', '_').replace('.', '_').split(':'); // setting name of report 
         const title = browserName + '_' + name[0];
 
         // here is configuration for our HTML report
         config = {
             reportTitle: title, // report title 
-            outputPath: 'tests/reports/', // path to save report 
+            outputPath: './tests/reports/', // path to save report 
             outputFilename: title, // file title
             screenshotPath: './screenshots', // screenshots destination 
             testBrowser: browserName,
@@ -95,7 +96,7 @@ exports.config = {
         };  
 
         // HTML reporter instance
-        new HtmlReporter().from(resultPath + 'results.xml', config);
+        new HtmlReporter().from('./tests/reports/results.xml', config);
       });
    });
   }

@@ -10,5 +10,6 @@ describe('Google Page', () => {
     it('typing phrase into input and clicking search', () => {
         googlePage.typePhrase('Protractor testing');
         googlePage.clickSearchButton();
+        expect(googlePage.getPageTitle()).toBe('Protractor testing - Google Search')
     });
 });
