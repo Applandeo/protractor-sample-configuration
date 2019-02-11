@@ -1,6 +1,6 @@
 # Protractor Sample Configuration with Generating HTML reporters
 Protractor Sample Configuration is a material created especially for [this article](https://applandeo.com/blog/).
-Here you can find configuration file with expamples, modified ** protractor-html-reporter-2 ** and exaple of Protractor tests with ** Page Object Model ** implementation.
+Here you can find configuration file with expamples, modified **protractor-html-reporter-2** and exaple of Protractor tests with **Page Object Model** implementation.
 
 ## How to run Protractor tests?
 If you would like to run all tests just type into your console:
@@ -20,7 +20,7 @@ npm run e2e -- --specs=path/to/tests
 - Fixed protractor-html-reporter-2 version
 
 ## Get in touch
-It would be great if you decide to use our component in your project. It’s open source, feel free. Write to us at (email)=(hi@applandeo.com) if you want to be listed and we will include your app in our repo. If you have any questions or suggestions just let us know.
+It would be great if you decide to use our component in your project. It’s open source, feel free. Write to us at hi@applandeo.comif you want to be listed and we will include your app in our repo. If you have any questions or suggestions just let us know.
 
 ## License
 ```
